@@ -1,2 +1,2 @@
 # jellyfish
-Interactive Animated Jellygish
+Interactive Animated Jellyfish
