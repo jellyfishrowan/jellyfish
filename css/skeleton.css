@@ -1,0 +1,273 @@
+/* -- Complete CSS Skeleton | Created by Monzilla Media for Perishable Press ---------- */
+/* -- Updated Aug 21st 2006 | Leave the footer credit complete and use at will -- */
+
+/* -- |x = deprecated -- */
+/* -- |n = navigator only -- */
+/* -- |e = explorer only -- */
+
+/* ---------- Modified by Rowan Abraham ---------- */
+
+	/* for info on selectors {"."A, "*"A, "#"A, ""A, A""B, A" "B, A","B, A">"B, A"+"B, A"~"B, etc...}
+	visit https://www.w3schools.com/cssref/css_selectors.asp */
+
+	/* Items are automatically commented out, comment in to use them */
+
+/* ---------- HEAD ---------- */
+
+/* !DOCTYPE {} */
+/* base {} */
+/* head {} */
+/* link {} */
+/* meta {} */
+/* title {} */
+
+/* ---------- MAIN ---------- */
+
+/* *, html *, body * {} */
+/* * {} */
+/* html {} */
+body {
+	margin: 0px;
+	/* height: auto; */
+}
+/* div#name {} */
+/* div.name {} */
+/* div {} */
+/* span {} */
+
+.background {
+	position: absolute; z-index: 0;
+	left: 0vw; top: 0vh;
+	width: 100vw; height: 100vh;
+	padding: 0px; margin: 0px;
+	background: rgb(0,255,169);
+background: linear-gradient(180deg, rgba(0,255,169,1) 0%, rgba(0,67,116,1) 54%, rgba(0,20,73,1) 100%);
+}
+
+#foreground {
+	position: absolute; z-index: 1;
+	left: 0vw; top: 0vh;
+	width: 50vw; height: 100vh;
+}
+
+/* ---------- TEXT ---------- */
+
+/* h1 {} */
+/* h2 {} */
+/* h3 {} */
+/* h4 {} */
+/* h5 {} */
+/* h6 {} */
+/* p {} */
+/* p:first-line {} */
+/* p:first-letter {} */
+
+/* h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {} */
+
+/* p:hover a:link, p:hover a:visited {} */
+/* p:hover a:hover, p:hover a:active {} */
+
+/* ---------- LISTS ---------- */
+
+/* ul {} */
+/* ol {} */
+/* li {} */
+/* ul li {} */
+/* ol li {} */
+/* ul ul, ul ol, ol ul, ol ol {} */
+/* ul li li {} */
+/* ol li li {} */
+
+/* li p, li li p {} */
+
+/* dl {} */
+/* dt {} */
+/* dd {} */
+
+/* ---------- IMAGES ---------- */
+
+/* img {} */
+/* img a {} */
+/* img a:hover {} */
+/* img.noborder {} */
+
+/* img.align-center, img[align="center"] {} */
+/* img.align-right, img[align="right"] {} */
+/* img.align-left, img[align="left"] {} */
+
+/* ---------- LINKS ---------- */
+
+/* a {} */
+/* a img {} */
+/* a:focus {} */
+/* a:link, a:visited {} */
+/* a:hover, a:active {} */
+
+/* a[href]:after {content: " | ";} */
+/* a[rel]:before { content: " * "; } */
+/* a[lang|="nl"] {} */
+/* a[title="common"] {} */
+/* area {} */
+/* map {} */
+
+/* ---------- FORMS ---------- */
+
+/* fieldset {} */
+/* textarea {} */
+/* textarea:hover {} */
+
+/* optgroup {} */
+/* option {} */
+/* select {} */
+
+/* button:hover {} */
+/* button {} */
+/* legend {} */
+/* label {} */
+
+/* input {} */
+/* input:focus {} */
+/* input:hover {} */
+/* input[type=submit], input[type=reset], input[type=button] {} */
+/* input[type=text]:focus, textarea:focus, select:focus {} */
+/* form input[type=text] {} */
+/* form {} */
+
+/* ---------- STYLES ---------- */
+
+/* blockquote {} */
+/* blockquote p {} */
+/* blockquote cite {} */
+
+/* pre {} */
+/* code {} */
+/* p code {} */
+/* pre code {} */
+
+/* kbd {} */
+/* samp {} */
+/* cite {} */
+/* abbr {} */
+/* acronym {} */
+/* address {} */
+
+/* hr {} */
+/* br {} */
+/* wbr {} */
+/* nobr {} */
+
+/* strong {} */
+/* small {} */
+/* sub {} */
+/* sup {} */
+/* big {} */
+/* em {} */
+/* i {} */
+/* b {} */
+/* q {} */
+/* tt {} */
+/* del {} */
+/* ins {} */
+/* var {} */
+
+/* basefont|x {} */
+/* isindex|x {} */
+/* strike|x {} */
+/* center|x {} */
+/* font|x {} */
+/* menu|x {} */
+/* dir|x {} */
+/* u|x {} */
+/* s|x {} */
+
+/* comment|e {} */
+/* marquee|e {} */
+/* ruby|e {} */
+/* rt|e {} */
+
+/* spacer|n {} */
+/* server|n {} */
+/* ilayer|n {} */
+/* keygen|n {} */
+/* layer|n {} */
+/* blink|n {} */
+
+/* ---------- TABLES ---------- */
+
+/* table {} */
+/* th {} */
+/* tr {} */
+/* td {} */
+
+/* colgroup {} */
+/* caption {} */
+/* col {} */
+
+/* tbody {} */
+/* thead {} */
+/* tfoot {} */
+
+/* multicol|n {} */
+
+/* ---------- FRAMES ---------- */
+
+/* frame {} */
+/* frameset {} */
+/* noframes {} */
+
+/* ---------- CLASSES ---------- */
+
+/* .hide {display: none;} */
+/* .show {display: block;} */
+
+/* .right {float: right;} */
+/* .left {float: left;} */
+
+/* .vert-align {vertical-align: middle;} */
+/* .center {text-align: center;} */
+
+/* .clear { display: block; clear: both; height: 1%; margin: 0; padding: 0; font-size: 1px; line-height: 1px;} */
+
+/* .background {background-color: auto;  background-image: auto; background-repeat: auto; background-attachment: auto; background-position: auto;} */
+/* .nobackground {background: none;} */
+/* .skipnav {position: absolute; height: 0.1em; left: -9999px; top: -9999px;} */
+/* .noborder {border: 0 none;} */
+
+/* ---------- MEDIA ---------- */
+
+/* embed {} */
+/* param {} */
+/* object {} */
+/* applet|x {} */
+/* bgsound|e {} */
+
+/* ---------- SCRIPTS ---------- */
+
+/* script {} */
+/* noscript {} */
+
+/* ---------- HACKS ---------- */
+
+div.clearfix:after {
+	content: ".";
+	visibility: hidden;
+	display: block;
+	clear: both;
+	height: 0; 
+}
+
+div.clearfix { display: inline-table; }
+
+/* Hides from IE-mac \*/
+	* html div.clearfix { height: 1%; }
+	div.clearfix { display: block; }
+/* End hide from IE-mac */
+
+/* -- END FILE -- */
+
+/* -- Complete CSS Skeleton | Created by Monzilla Media for Perishable Press -- */
+/* -- Updated Aug 21st 2006 | Leave this footer credit complete and use at will -- */
+
+::-webkit-scrollbar {
+    display: none;
+}
