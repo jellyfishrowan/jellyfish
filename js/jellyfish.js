@@ -55,6 +55,7 @@
     }
         class Draggable{//modified from code available at https://editor.p5js.org/codingtrain/sketches/U0R5B6Z88
             constructor(){
+            // constructor(init_x, init_y, init_size, init_color{r:255, g:255, b:255}, init_opacity, init_travelDistance){
                 this.dragging = false; // Is the object being dragged?
                 this.rollover = false; // Is the mouse over the ellipse?
     
@@ -199,34 +200,34 @@
                     this.aMLipWNW = this.aMLipENE;
                     this.aMLipNW = this.aMLipNE;
         
-                    this.animatedLipN_X  = this.animatedLipCentreX + sin(this.bulbAngle - (0   * QUARTER_PI)) * this.aMLipN;//AL_N
-                    this.animatedLipN_Y  = this.animatedLipCentreY + cos(this.bulbAngle - (0   * QUARTER_PI)) * this.aMLipN;
-                    this.animatedLipNE_X  = this.animatedLipCentreX + sin(this.bulbAngle - (1 * QUARTER_PI)) * this.aMLipNE;//AL_NE
-                    this.animatedLipNE_Y  = this.animatedLipCentreY + cos(this.bulbAngle - (1 * QUARTER_PI)) * this.aMLipNE;
+                    this.animatedLipN_X   = this.animatedLipCentreX + sin(this.bulbAngle - (0.0 * QUARTER_PI)) * this.aMLipN;//AL_N
+                    this.animatedLipN_Y   = this.animatedLipCentreY + cos(this.bulbAngle - (0.0 * QUARTER_PI)) * this.aMLipN;
+                    this.animatedLipNE_X  = this.animatedLipCentreX + sin(this.bulbAngle - (1.0 * QUARTER_PI)) * this.aMLipNE;//AL_NE
+                    this.animatedLipNE_Y  = this.animatedLipCentreY + cos(this.bulbAngle - (1.0 * QUARTER_PI)) * this.aMLipNE;
                     this.animatedLipENE_X = this.animatedLipCentreX + sin(this.bulbAngle - (1.5 * QUARTER_PI)) * this.aMLipENE;//AL_ENE
                     this.animatedLipENE_Y = this.animatedLipCentreY + cos(this.bulbAngle - (1.5 * QUARTER_PI)) * this.aMLipENE;
-                    this.animatedLipE_X  = this.animatedLipCentreX + sin(this.bulbAngle - (2   * QUARTER_PI)) * this.aMLipE;//AL_E
-                    this.animatedLipE_Y  = this.animatedLipCentreY + cos(this.bulbAngle - (2   * QUARTER_PI)) * this.aMLipE;
+                    this.animatedLipE_X   = this.animatedLipCentreX + sin(this.bulbAngle - (2.0 * QUARTER_PI)) * this.aMLipE;//AL_E
+                    this.animatedLipE_Y   = this.animatedLipCentreY + cos(this.bulbAngle - (2.0 * QUARTER_PI)) * this.aMLipE;
                     this.animatedLipESE_X = this.animatedLipCentreX + sin(this.bulbAngle - (2.5 * QUARTER_PI)) * this.aMLipESE;//AL_ESE
                     this.animatedLipESE_Y = this.animatedLipCentreY + cos(this.bulbAngle - (2.5 * QUARTER_PI)) * this.aMLipESE;
-                    this.animatedLipSE_X  = this.animatedLipCentreX + sin(this.bulbAngle - (3   * QUARTER_PI)) * this.aMLipSE;//AL_SW
-                    this.animatedLipSE_Y  = this.animatedLipCentreY + cos(this.bulbAngle - (3   * QUARTER_PI)) * this.aMLipSE;
-                    this.animatedLipSSE_X  = this.animatedLipCentreX + sin(this.bulbAngle - (3.5   * QUARTER_PI)) * this.aMLipSSE;//AL_SW
-                    this.animatedLipSSE_Y  = this.animatedLipCentreY + cos(this.bulbAngle - (3.5   * QUARTER_PI)) * this.aMLipSSE;
-                    this.animatedLipS_X  = this.animatedLipCentreX + sin(this.bulbAngle - (4   * QUARTER_PI)) * this.aMLipS;//AL_S
-                    this.animatedLipS_Y  = this.animatedLipCentreY + cos(this.bulbAngle - (4   * QUARTER_PI)) * this.aMLipS;
-                    this.animatedLipSSW_X  = this.animatedLipCentreX + sin(this.bulbAngle - (4.5   * QUARTER_PI)) * this.aMLipSSW;//AL_SW
-                    this.animatedLipSSW_Y  = this.animatedLipCentreY + cos(this.bulbAngle - (4.5   * QUARTER_PI)) * this.aMLipSSW;
-                    this.animatedLipSW_X  = this.animatedLipCentreX + sin(this.bulbAngle - (5   * QUARTER_PI)) * this.aMLipSW;//AL_SW
-                    this.animatedLipSW_Y  = this.animatedLipCentreY + cos(this.bulbAngle - (5   * QUARTER_PI)) * this.aMLipSW;
+                    this.animatedLipSE_X  = this.animatedLipCentreX + sin(this.bulbAngle - (3.0 * QUARTER_PI)) * this.aMLipSE;//AL_SW
+                    this.animatedLipSE_Y  = this.animatedLipCentreY + cos(this.bulbAngle - (3.0 * QUARTER_PI)) * this.aMLipSE;
+                    this.animatedLipSSE_X = this.animatedLipCentreX + sin(this.bulbAngle - (3.5 * QUARTER_PI)) * this.aMLipSSE;//AL_SW
+                    this.animatedLipSSE_Y = this.animatedLipCentreY + cos(this.bulbAngle - (3.5 * QUARTER_PI)) * this.aMLipSSE;
+                    this.animatedLipS_X   = this.animatedLipCentreX + sin(this.bulbAngle - (4.0 * QUARTER_PI)) * this.aMLipS;//AL_S
+                    this.animatedLipS_Y   = this.animatedLipCentreY + cos(this.bulbAngle - (4.0 * QUARTER_PI)) * this.aMLipS;
+                    this.animatedLipSSW_X = this.animatedLipCentreX + sin(this.bulbAngle - (4.5 * QUARTER_PI)) * this.aMLipSSW;//AL_SW
+                    this.animatedLipSSW_Y = this.animatedLipCentreY + cos(this.bulbAngle - (4.5 * QUARTER_PI)) * this.aMLipSSW;
+                    this.animatedLipSW_X  = this.animatedLipCentreX + sin(this.bulbAngle - (5.0 * QUARTER_PI)) * this.aMLipSW;//AL_SW
+                    this.animatedLipSW_Y  = this.animatedLipCentreY + cos(this.bulbAngle - (5.0 * QUARTER_PI)) * this.aMLipSW;
                     this.animatedLipWSW_X = this.animatedLipCentreX + sin(this.bulbAngle - (5.5 * QUARTER_PI)) * this.aMLipWSW;//AL_WSW
                     this.animatedLipWSW_Y = this.animatedLipCentreY + cos(this.bulbAngle - (5.5 * QUARTER_PI)) * this.aMLipWSW;
-                    this.animatedLipW_X  = this.animatedLipCentreX + sin(this.bulbAngle - (6   * QUARTER_PI)) * this.aMLipW;//AL_W
-                    this.animatedLipW_Y  = this.animatedLipCentreY + cos(this.bulbAngle - (6   * QUARTER_PI)) * this.aMLipW;
+                    this.animatedLipW_X   = this.animatedLipCentreX + sin(this.bulbAngle - (6.0 * QUARTER_PI)) * this.aMLipW;//AL_W
+                    this.animatedLipW_Y   = this.animatedLipCentreY + cos(this.bulbAngle - (6.0 * QUARTER_PI)) * this.aMLipW;
                     this.animatedLipWNW_X = this.animatedLipCentreX + sin(this.bulbAngle - (6.5 * QUARTER_PI)) * this.aMLipWNW;//AL_WNW
                     this.animatedLipWNW_Y = this.animatedLipCentreY + cos(this.bulbAngle - (6.5 * QUARTER_PI)) * this.aMLipWNW;
-                    this.animatedLipNW_X  = this.animatedLipCentreX + sin(this.bulbAngle - (7 * QUARTER_PI)) * this.aMLipNW;//AL_NW
-                    this.animatedLipNW_Y  = this.animatedLipCentreY + cos(this.bulbAngle - (7 * QUARTER_PI)) * this.aMLipNW;
+                    this.animatedLipNW_X  = this.animatedLipCentreX + sin(this.bulbAngle - (7.0 * QUARTER_PI)) * this.aMLipNW;//AL_NW
+                    this.animatedLipNW_Y  = this.animatedLipCentreY + cos(this.bulbAngle - (7.0 * QUARTER_PI)) * this.aMLipNW;
                 }
                 
             }
