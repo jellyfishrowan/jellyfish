@@ -45,9 +45,6 @@
         var segmentWidth = 1;
         var segmentPoints = 25;
         var segmentGroups = 13;
-        
-        // var testingBounceX = 100, testingBounceY = 100;
-        var testingBounceAngle = 0.0;
     }
     
     {// ---------- Define Actions and dependancies ----------
@@ -86,6 +83,7 @@
                 }
             }
             isHovered(){
+                // TODO: maybe replace the if check for mouseDown with this, and fix this to be accurate to actual position, not just position before fluid movement
                 if (mouseX > this.x && mouseX < this.x + this.w && mouseY > this.y && mouseY < this.y + this.h) {
                     this.rollover = true;
                 } else {
@@ -119,6 +117,7 @@
                     fill(50, 100);
                 } else if (this.rollover === true){
                     fill(100, 100);
+                    circle(0,0, 100, 100);
                 } else {
                     fill(255, 0);
                 }
@@ -409,8 +408,14 @@
             isReleased(){this.dragging = false;}
         }
     
-        function mousePressed(){jellyfishOne.isPressed();}
-        function mouseReleased(){jellyfishOne.isReleased();}
+        function mousePressed(){
+            // TODO: replace this with a way to go through each class instance, this requires me to explicitly state each class instance
+            jellyfishOne.isPressed();
+        }
+        function mouseReleased(){
+            // TODO: replace this with a way to go through each class instance, this requires me to explicitly state each class instance
+            jellyfishOne.isReleased();
+        }
     
     {// ---------- Define Main Sequence(s) ----------
         function preload(){
