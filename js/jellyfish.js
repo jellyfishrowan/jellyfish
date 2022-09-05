@@ -46,7 +46,7 @@
         var segmentPoints = 25;
         var segmentGroups = 13;
         
-        var testingBounceX = 100, testingBounceY = 100;
+        // var testingBounceX = 100, testingBounceY = 100;
         var testingBounceAngle = 0.0;
     }
     
