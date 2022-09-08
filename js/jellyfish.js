@@ -113,9 +113,10 @@
                 }
             }
             show(){
+                //TODO: We only need drawTentacles() and drawBulb(), the rest seems unnecessary
                 if (this.dragging === true){
                     fill(50, 100);
-                } else if (this.rollover === true){
+                } else if (this.rollover === true){//TODO: Check if this.rollover actually does anything useful
                     fill(100, 100);
                     circle(0,0, 100, 100);
                 } else {
